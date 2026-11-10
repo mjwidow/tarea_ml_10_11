@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($out=\"C:\\\\proyectos_ia\\\\clase_10_11\\\\docs\\\\papers\\\\Boschetti_2025_Biomarkers_CRCI_Breast_Cancer.pdf\"; try { Invoke-WebRequest -Uri \"https://europepmc.org/api/fulltextRepo?pprId=PMC12610328&type=FILE&fileName=cancers-17-03522.pdf\" -OutFile $out -UserAgent \"Mozilla/5.0\" -ErrorAction Stop } catch { Invoke-WebRequest -Uri \"https://europepmc.org/articles/PMC12610328/pdf\" -OutFile $out -UserAgent \"Mozilla/5.0\" }; $b = Get-Content $out -Encoding Byte -TotalCount 5; [System.Text.Encoding]::ASCII.GetString\\($b\\); \\(Get-Item $out\\).Length)",
+      "PowerShell(\\(Invoke-WebRequest \"https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC12610328\" -UseBasicParsing\\).Content)"
+    ]
+  }
+}
