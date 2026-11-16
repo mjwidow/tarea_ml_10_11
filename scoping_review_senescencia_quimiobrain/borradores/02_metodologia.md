@@ -54,6 +54,38 @@ La pregunta se estructuró con el marco PCC (población, concepto, contexto):
 
 Además de los desenlaces principales, se registran fatiga, sueño, distrés, depresión y calidad de vida (por ejemplo, FACT-F, BFI, PSQI, EORTC QLQ-C30, FACT-B).
 
+### 2.3.3 Definición operativa de biomarcador de senescencia
+
+Varias de las citocinas elegibles (IL-6, IL-8, IL-1β, TNF-α) son a la vez marcadores inflamatorios generales y componentes del SASP. Para que la revisión conserve su enfoque en senescencia sin modificar los criterios de elegibilidad del protocolo, los biomarcadores se clasifican en niveles. La clasificación no determina la elegibilidad: se usa para caracterizar la evidencia y estructurar la síntesis.
+
+| Nivel | Definición | Marcadores | Tratamiento en la revisión |
+|---|---|---|---|
+| **1. Directos** | Arresto del ciclo celular (vía p53/p21/p16–Rb) y erosión telomérica | p16INK4a (CDKN2A), p21CIP1 (CDKN1A), p53, Rb hipofosforilada, longitud telomérica leucocitaria | Síntesis principal |
+| **2A. SASP más específicos** | Componentes del SASP menos usados como marcadores inflamatorios generales [verificar] | GDF-15, PAI-1/SERPINE1 | Síntesis principal |
+| **2B. SASP compartidos con inflamación general** | Componentes del SASP que también son marcadores inflamatorios clásicos | IL-6, IL-8, IL-1β, TNF-α, MCP-1/CCL2 | Síntesis secundaria (mapa), indicando si los autores los interpretan como senescencia, SASP o envejecimiento biológico |
+| **3. No específicos** | Marcadores inflamatorios o tumorales sin relación específica con senescencia | PCR, cociente neutrófilo/linfocito, CEA, CA15-3, IL-10, IL-4, IL-2, IFN-γ | No elegibles por sí solos. Se registran como marcadores adicionales si el estudio también mide uno de los niveles 1 o 2 |
+
+**Reglas de síntesis.**
+- La síntesis principal incluye los estudios que miden al menos un marcador de nivel 1 o 2A.
+- La síntesis secundaria incluye los estudios que solo miden marcadores de nivel 2B. De cada uno se registra si los autores enmarcan el marcador como indicador de senescencia, SASP o envejecimiento biológico (sí/no).
+- El número de estudios en cada grupo se informa de forma explícita, porque dimensiona el vacío de evidencia directa sobre senescencia.
+
+**Clasificación provisional del corpus actual** (ejemplo de aplicación; a revisar con los textos completos):
+
+| Estudio | Marcadores | Nivel | Destino |
+|---|---|---|---|
+| Alhareeri 2020 | Longitud telomérica (qPCR y FISH) | 1 | Síntesis principal |
+| Duivon 2024 | IL-6, IL-8, TNF-α (además PCR, nivel 3) | 2B | Secundaria |
+| Keetile 2023 | IL-1β, IL-6, IL-8, TNF-α | 2B | Secundaria |
+| Henneghan 2019 | IL-6, TNF-α, IL-1β, IL-8 (además amiloide β y tau) | 2B | Secundaria; enmarcado en envejecimiento cerebral acelerado [verificar] |
+| Lyon 2016, Janelsins 2011, Ganz 2013, Pomykala 2013 | Citocinas (IL-6, IL-8, MCP-1, TNF-α, según título) | 2B probable | Secundaria [verificar] |
+| Yu 2022 | NLR, CEA, CA15-3 | 3 | No elegible |
+| Schroyen 2022, Boschetti 2025, Fierro-Salgado 2025 | — | — | No elegibles (revisiones o estudios en animales); se usan para la introducción y el rastreo de citas |
+
+Con este esquema, de los 12 registros relevantes del corpus solo uno entraría en la síntesis principal.
+
+**Nota de registro.** Esta clasificación no cambia los criterios registrados en OSF, pero conviene documentarla como aclaración en el registro antes de iniciar el cribado, con fecha. [Pendiente: validar con el equipo la ubicación de GDF-15 y PAI-1 en el nivel 2A, y si p53 y Rb pueden interpretarse como marcadores de senescencia cuando se miden en sangre periférica.]
+
 ## 2.4 Fuentes de información
 
 La búsqueda se realiza en MEDLINE (vía PubMed), Cochrane CENTRAL y Epistemonikos. Se complementa con el seguimiento de citas hacia atrás y hacia adelante de los estudios incluidos y de las revisiones relevantes.
@@ -103,7 +135,7 @@ La extracción se realiza con un formulario de charting elaborado para esta revi
 
 - **Identificación:** autor, año, país, diseño del estudio, objetivo.
 - **Población:** tamaño muestral, edad, estadio, régimen de quimioterapia, tratamientos concomitantes, grupo de comparación.
-- **Biomarcadores:** nombre, categoría (senescencia, SASP u otro), matriz, método de ensayo, momento de medición.
+- **Biomarcadores:** nombre, nivel de senescencia (1, 2A, 2B o 3, según 2.3.3), si los autores lo enmarcan como indicador de senescencia, SASP o envejecimiento biológico (sí/no), matriz, método de ensayo, momento de medición.
 - **Desenlace cognitivo:** instrumento, tipo (objetivo o autorreportado), dominios evaluados, momento de evaluación.
 - **Resultados:** análisis estadístico, asociación reportada (dirección y magnitud, tal como se publicó) y covariables.
 - **Otros desenlaces:** fatiga, sueño, distrés, depresión y calidad de vida.
