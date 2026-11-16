@@ -1,6 +1,6 @@
 # 2. Metodología
 
-*Borrador v0.1 (fuente: protocolo OSF del review). Los textos entre corchetes son pendientes o decisiones por confirmar.*
+*Borrador v0.2 (fuente: protocolo OSF del review). Los cambios respecto del protocolo se documentan en `protocolo/cambios_respecto_al_protocolo_OSF.md`. Los textos entre corchetes son pendientes o decisiones por confirmar.*
 
 ## 2.1 Diseño y registro del protocolo
 
@@ -16,7 +16,7 @@ La pregunta se estructuró con el marco PCC (población, concepto, contexto):
 |---|---|
 | **Población** | Adultos de 18 años o más con cáncer de mama no metastásico (estadios AJCC I–III) que recibirán, reciben o recibieron quimioterapia citotóxica sistémica. |
 | **Concepto** | Relación entre biomarcadores circulantes de senescencia y SASP y desenlaces cognitivos en el contexto de la quimioterapia citotóxica. |
-| **Contexto** | Sin restricción geográfica, cultural ni de entorno asistencial [confirmar: el protocolo deja este campo sin completar]. |
+| **Contexto** | Sin restricción geográfica, cultural ni de entorno asistencial. |
 
 ## 2.3 Criterios de elegibilidad
 
@@ -33,7 +33,11 @@ La pregunta se estructuró con el marco PCC (población, concepto, contexto):
 
 **Comparaciones.** Controles sanos, pacientes sin quimioterapia, línea de base previa a la quimioterapia y distintos regímenes. Los estudios sin grupo de comparación externo son elegibles si reportan cambio intrasujeto o análisis de correlación o regresión.
 
-**Tipos de fuente.** Estudios primarios en humanos revisados por pares: cohortes prospectivas y retrospectivas, estudios de casos y controles (incluidos los anidados), estudios transversales con análisis cuantitativos de asociación, y ensayos clínicos aleatorizados o análisis secundarios de ensayos. [El protocolo también menciona literatura gris, tesis, preprints y actas de congresos; ver 2.4 para la decisión pendiente.]
+**Tipos de fuente.** Publicaciones revisadas por pares de dos tipos:
+- *Estudios primarios en humanos:* cohortes prospectivas y retrospectivas, estudios de casos y controles (incluidos los anidados), estudios transversales con análisis cuantitativos de asociación, y ensayos clínicos aleatorizados o análisis secundarios de ensayos.
+- *Revisiones sistemáticas, con o sin metaanálisis,* que incluyan estudios en humanos y cumplan los criterios de población, biomarcadores y desenlace cognitivo de esta sección.
+
+Las revisiones sistemáticas se tratan como una fuente aparte (ver 2.6 y 2.8) para evitar contar dos veces los mismos estudios primarios.
 
 **Idioma y fecha.** Publicaciones en inglés o español, sin restricción de fecha.
 
@@ -48,7 +52,8 @@ La pregunta se estructuró con el marco PCC (población, concepto, contexto):
 - Estudios preclínicos, in vitro o en animales.
 - Reportes de caso y series de casos con N < 10.
 - Estudios cualitativos.
-- Revisiones narrativas y sistemáticas, metaanálisis, declaraciones de consenso, protocolos sin resultados, editoriales y cartas.
+- Revisiones narrativas, declaraciones de consenso, protocolos sin resultados, editoriales y cartas.
+- Literatura gris, tesis, preprints y actas de congresos (solo se aceptan publicaciones revisadas por pares).
 - Estudios sin evaluación cognitiva estandarizada.
 - Estudios que no cuantifiquen biomarcadores de senescencia o SASP.
 
@@ -80,17 +85,16 @@ Varias de las citocinas elegibles (IL-6, IL-8, IL-1β, TNF-α) son a la vez marc
 | Henneghan 2019 | IL-6, TNF-α, IL-1β, IL-8 (además amiloide β y tau) | 2B | Secundaria; enmarcado en envejecimiento cerebral acelerado [verificar] |
 | Lyon 2016, Janelsins 2011, Ganz 2013, Pomykala 2013 | Citocinas (IL-6, IL-8, MCP-1, TNF-α, según título) | 2B probable | Secundaria [verificar] |
 | Yu 2022 | NLR, CEA, CA15-3 | 3 | No elegible |
-| Schroyen 2022, Boschetti 2025, Fierro-Salgado 2025 | — | — | No elegibles (revisiones o estudios en animales); se usan para la introducción y el rastreo de citas |
+| Schroyen 2022, Boschetti 2025 | Revisiones sistemáticas de marcadores sanguíneos y cognición (predominan citocinas inflamatorias) | 2B | Elegibles como revisiones sistemáticas (fuente aparte); se usan además para el rastreo de citas [verificar que cumplan población y quimioterapia] |
+| Fierro-Salgado 2025 | Citocinas y BDNF en modelos animales | — | No elegible (estudios en animales); solo respaldo mecanístico en la introducción |
 
-Con este esquema, de los 12 registros relevantes del corpus solo uno entraría en la síntesis principal.
+Con este esquema, de los 12 registros relevantes del corpus, solo un estudio primario (Alhareeri 2020) entraría en la síntesis principal.
 
 **Nota de registro.** Esta clasificación no cambia los criterios registrados en OSF, pero conviene documentarla como aclaración en el registro antes de iniciar el cribado, con fecha. [Pendiente: validar con el equipo la ubicación de GDF-15 y PAI-1 en el nivel 2A, y si p53 y Rb pueden interpretarse como marcadores de senescencia cuando se miden en sangre periférica.]
 
 ## 2.4 Fuentes de información
 
-La búsqueda se realiza en MEDLINE (vía PubMed), Cochrane CENTRAL y Epistemonikos. Se complementa con el seguimiento de citas hacia atrás y hacia adelante de los estudios incluidos y de las revisiones relevantes.
-
-[Pendiente: el protocolo incluye literatura gris, tesis, preprints y actas de congresos como tipos de fuente, pero no indica dónde se buscarán, y al mismo tiempo establece un filtro de "revisados por pares". Hay que decidir si se mantienen esas fuentes y, de ser así, añadir las bases correspondientes (por ejemplo, un repositorio de preprints) o retirarlas de los criterios.]
+La búsqueda se realiza en MEDLINE (vía PubMed), Cochrane CENTRAL y Epistemonikos, esta última especialmente útil para localizar revisiones sistemáticas. Se complementa con el seguimiento de citas hacia atrás y hacia adelante de los estudios incluidos y de las revisiones sistemáticas relevantes, de las que se recuperan los estudios primarios que puedan cumplir los criterios. Solo se consideran publicaciones revisadas por pares; no se busca literatura gris, tesis, preprints ni actas de congresos.
 
 ## 2.5 Estrategia de búsqueda
 
@@ -106,9 +110,13 @@ Se aplica la búsqueda en tres pasos recomendada por JBI: (1) búsqueda limitada
 ("Antineoplastic Agents"[Mesh] OR "Chemotherapy, Adjuvant"[Mesh] OR chemotherap*[tiab] OR "cytotoxic chemotherapy"[tiab] OR "systemic chemotherapy"[tiab])
 
 #3 Biomarcadores
-("Cellular Senescence"[Mesh] OR senescen*[tiab] OR p16INK4a[tiab] OR CDKN2A[tiab] OR p21CIP1[tiab] OR CDKN1A[tiab]
- OR "IL-6"[tiab] OR "interleukin-6"[tiab] OR "TNF-alpha"[tiab] OR "tumor necrosis factor"[tiab] OR "GDF-15"[tiab]
- OR "IL-8"[tiab] OR "IL-1beta"[tiab] OR "biological aging"[tiab] OR "accelerated aging"[tiab])
+("Cellular Senescence"[Mesh] OR senescen*[tiab] OR SASP[tiab] OR "senescence-associated secretory phenotype"[tiab]
+ OR p16[tiab] OR p16INK4a[tiab] OR CDKN2A[tiab] OR p21[tiab] OR p21CIP1[tiab] OR CDKN1A[tiab] OR p53[tiab]
+ OR "retinoblastoma protein"[tiab] OR telomere*[tiab]
+ OR "GDF-15"[tiab] OR "growth differentiation factor 15"[tiab] OR "PAI-1"[tiab] OR SERPINE1[tiab] OR "plasminogen activator inhibitor"[tiab]
+ OR "IL-6"[tiab] OR "interleukin-6"[tiab] OR "IL-8"[tiab] OR "interleukin-8"[tiab] OR "IL-1beta"[tiab] OR "interleukin-1 beta"[tiab]
+ OR "TNF-alpha"[tiab] OR "tumor necrosis factor"[tiab] OR "MCP-1"[tiab] OR CCL2[tiab]
+ OR "biological aging"[tiab] OR "accelerated aging"[tiab])
 
 #4 Desenlace
 ("Cognitive Dysfunction"[Mesh] OR chemobrain[tiab] OR "chemo brain"[tiab] OR "chemo fog"[tiab] OR CRCI[tiab]
@@ -120,12 +128,15 @@ Filtros: Humans; English OR Spanish
 
 Notas para validar la cadena:
 - El protocolo menciona los descriptores "Cyclin-Dependent Kinase Inhibitor 2A" y "Chemotherapy-Related Cognitive Impairment" como MeSH. Hay que verificar en el MeSH Browser que existan con esos nombres antes de usarlos; en la cadena anterior se reemplazaron por términos en título y resumen.
-- Los marcadores p53, Rb, longitud telomérica, MCP-1 y PAI-1 están en los criterios de elegibilidad pero no en la lista de términos de búsqueda del protocolo. Conviene decidir si se agregan al bloque #3.
+- Los marcadores p53, Rb, longitud telomérica, MCP-1 y PAI-1, que están en los criterios de elegibilidad pero no en la lista de términos del protocolo, se incorporaron al bloque #3. El término p53 puede recuperar muchos registros no relacionados; se evalúa su efecto en la búsqueda piloto.
+- La cadena no incluye filtro de diseño, de modo que recupera tanto estudios primarios como revisiones sistemáticas.
 - Fecha de la búsqueda, número de registros recuperados por base y cadenas adaptadas a CENTRAL y Epistemonikos: [pendiente].
 
 ## 2.6 Selección de los estudios
 
 Las referencias recuperadas se desduplican y se importan a Rayyan. El cribado se realiza en dos etapas: primero títulos y resúmenes, y después texto completo de los estudios potencialmente elegibles, ambos contra los criterios de la sección 2.3. Dos revisores trabajan de forma independiente en cada etapa. Los desacuerdos se resuelven por consenso o con un tercer revisor. Se registran los motivos de exclusión de cada texto completo.
+
+Las revisiones sistemáticas que cumplan los criterios se incluyen como fuente aparte. De cada una se revisa la lista de estudios incluidos y se recuperan los estudios primarios que no hayan aparecido en la búsqueda, para cribarlos con los mismos criterios. Se registra qué estudios primarios están contenidos en cada revisión, para informar el solapamiento y no contarlos dos veces.
 
 El proceso se presenta en un diagrama de flujo PRISMA-ScR con el número de registros identificados, cribados, evaluados a texto completo, excluidos (con sus motivos) e incluidos. [Pendiente: nombres o iniciales de los revisores, y si se hará una prueba piloto de calibración del cribado.]
 
@@ -139,10 +150,11 @@ La extracción se realiza con un formulario de charting elaborado para esta revi
 - **Desenlace cognitivo:** instrumento, tipo (objetivo o autorreportado), dominios evaluados, momento de evaluación.
 - **Resultados:** análisis estadístico, asociación reportada (dirección y magnitud, tal como se publicó) y covariables.
 - **Otros desenlaces:** fatiga, sueño, distrés, depresión y calidad de vida.
+- **Revisiones sistemáticas:** bases consultadas, fecha de la última búsqueda, número de estudios incluidos, biomarcadores cubiertos, estudios primarios que contiene y conclusiones principales.
 - **Notas:** limitaciones señaladas por los autores y observaciones del revisor.
 
 Los datos extraídos se publicarán en el repositorio OSF al terminar la revisión.
 
 ## 2.8 Síntesis de los datos
 
-Los resultados se presentan como un diagrama de flujo PRISMA-ScR y un resumen numérico de los estudios incluidos (año, país, diseño, régimen y tamaño muestral), junto con tablas y gráficos que mapean la categoría de biomarcador y su matriz, la modalidad y el dominio cognitivo, la ventana temporal, el régimen de quimioterapia y las características de las participantes. Las ventanas temporales son: basal, durante la quimioterapia, hasta 3 meses y ≥6 meses; las mediciones entre 3 y 6 meses se asignan a la ventana más cercana y se señalan. Las asociaciones se tabulan tal como se publicaron y se resumen de forma narrativa para responder a la pregunta de revisión e identificar vacíos.
+Los resultados se presentan como un diagrama de flujo PRISMA-ScR y un resumen numérico de los estudios incluidos (año, país, diseño, régimen y tamaño muestral), junto con tablas y gráficos que mapean la categoría de biomarcador y su matriz, la modalidad y el dominio cognitivo, la ventana temporal, el régimen de quimioterapia y las características de las participantes. Las ventanas temporales son: basal, durante la quimioterapia, hasta 3 meses y ≥6 meses; las mediciones entre 3 y 6 meses se asignan a la ventana más cercana y se señalan. Las asociaciones se tabulan tal como se publicaron y se resumen de forma narrativa para responder a la pregunta de revisión e identificar vacíos. Los estudios primarios y las revisiones sistemáticas se presentan en tablas separadas, y el solapamiento entre ellos se informa de forma explícita.
